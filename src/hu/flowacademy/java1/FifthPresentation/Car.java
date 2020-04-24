@@ -36,4 +36,9 @@ public class Car {
     public void setYearOfManufacture(int yearOfManufacture) {
         this.yearOfManufacture = yearOfManufacture;
     }
+
+    @Override
+    public String toString() {
+        return "A " + id + " számú autó tulajdonosa " + owner.getOwner() + ". Az autó gyártási éve: " + yearOfManufacture ;
+    }
 }
