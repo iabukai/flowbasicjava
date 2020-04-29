@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.List;
 
 public class CarMain {
     public static void main(String[] args) throws IOException {
@@ -43,7 +44,7 @@ public class CarMain {
             //System.out.println(cars[i]);
         }
     }
-    public static Car[] getCars() throws IOException {
+    public static List<Car> getCars() throws IOException {
         BufferedReader bufferedReader = new BufferedReader((new FileReader("MOCK_DATA(1).csv")));
         String line = bufferedReader.readLine(); // 1,Gerald,Shooter,gshooter0@is.gd,Male,1997
 
@@ -73,7 +74,7 @@ public class CarMain {
 */
 
         }
-        return cars;
+        return Arrays.asList(cars);
     }
 }
 

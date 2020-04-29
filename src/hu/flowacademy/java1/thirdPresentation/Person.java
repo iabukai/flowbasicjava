@@ -1,5 +1,6 @@
 package hu.flowacademy.java1.thirdPresentation;
 
+import java.util.Comparator;
 import java.util.Objects;
 
 public class Person {
@@ -37,5 +38,13 @@ public class Person {
     public  void print() {
 
     };
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
 }
 
