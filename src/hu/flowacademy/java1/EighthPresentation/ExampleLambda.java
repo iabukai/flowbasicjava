@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class Lambda {
+public class ExampleLambda {
     static String harmadik = "Harmadik";
     private String negyedik = "negyedik";
 
@@ -23,32 +23,32 @@ public class Lambda {
             }
         };
         list.sort(integerComparator);
-        Comparator<Integer> integerComparator2 = (Integer o1, Integer o2) -> { return o1.compareTo(o2); };
+
+        String test = "10000";
+      /*  Comparator<Integer> compareTo10000 = (Integer o1, Integer o2) -> {
+            /*Integer asd = Integer.parseInt(test);
+            if(p1.getAge() > p2.getAge()) {
+                return 1;
+            } else if (p1.getAge() < p2.getAge()) {
+                return -1;
+            }
+            return 0;
+        };*/
+        test = "asdhkjhjsadk";
         //Comparator<Integer> integerComparator3 = Comparator::naturalOrder();
-        list.sort(integerComparator2);
+        //list.sort(compareTo10000);
         Comparator<Integer> integerComparator3 = (Integer o1, Integer o2) -> o1.compareTo(o2);
-        list.sort(integerComparator2);
+        //list.sort(compareTo10000);
 
         //LambdaInterface lambdaInterface = () -> System.out.println("hello");
         //lambdaInterface.printRandom();
 
-        Lambda lambda = new Lambda();
-        lambda.printIt();
 
 
     }
 
     public void printIt() {
-        String prefix = "Ez itt a prefix: ";
-        LambdaInterface printItToMe = (param) -> {
-           System.out.println(prefix + param + harmadik + negyedik);
-        };
 
-
-
-        printItToMe.printRandom("HELLO Printit");
-        harmadik = " Túl jó ez ";
-        printItToMe.printRandom("HELLO Printit");
     }
 
     private static List<Integer> getIntegers() {

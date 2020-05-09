@@ -5,6 +5,10 @@ public abstract class Allat {
     private int jollakottsag;
     private int ero;
 
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
 
     public Allat(String nev) {
         this.nev = nev;

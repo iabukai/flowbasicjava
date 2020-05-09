@@ -9,6 +9,7 @@ public class Person {
     private String name;
     private int age;
     private String sex;
+    public static int year = 2020;
 
     public Person() {
         this.personId = 0;
@@ -35,8 +36,8 @@ public class Person {
         // setPersonName("barmi");
     }
 
-    public  void print() {
-
+    public void print() {
+        System.out.println("EREDETI PRINT");
     };
 
     public int getAge() {
@@ -45,6 +46,14 @@ public class Person {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public static Integer getYear() {
+        return year;
+    }
+
+    public static void setYear(Integer year) {
+        Person.year = year;
     }
 }
 
